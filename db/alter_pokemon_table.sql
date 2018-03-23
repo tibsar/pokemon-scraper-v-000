@@ -1,2 +1,2 @@
 ALTER TABLE pokemon
-ADD hp datatype; 
+ADD hp INTEGER ; 
