@@ -52,11 +52,7 @@ describe "Pokemon" do
 
     describe "knows that a pokemon have a default hp of 60" do
       it "Implement the bonus section of the README. Then remove this line."
-      @db = SQLite3::Database.new(':memory:')
-      @db.execute("DROP TABLE IF EXISTS pokemon")
-      @sql_runner = SQLRunner.new(@db)
-      @sql_runner.execute_schema_migration_sql
-      @sql_runner.execute_create_hp_column
+      
       expect(@db.execute("knows_default_hp").flatten.first).to eq(60)
     end
 
