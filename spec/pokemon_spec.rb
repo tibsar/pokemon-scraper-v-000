@@ -50,11 +50,11 @@ describe "Pokemon" do
       @sql_runner.execute_create_hp_column
     end
 
-    describe "knows that a pokemon have a default hp of 60" do
-      it "Implement the bonus section of the README. Then remove this line."
+    # describe "knows that a pokemon have a default hp of 60" do
+    #   it "Implement the bonus section of the README. Then remove this line."
       
-      expect(@db.execute("knows_default_hp").flatten.first).to eq(60)
-    end
+    #   expect(@db.execute("knows_default_hp").flatten.first).to eq(60)
+    # end
 
     # So Ian and you have decided to battle.  He chose Magikarp (rookie mistake), and you chose Pikachu.
     # He used splash. It wasn't very effective. It did one damage.
